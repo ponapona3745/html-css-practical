@@ -1,0 +1,163 @@
+* {
+  box-sizing: border-box;
+}
+
+/* PC、スマホ共通スタイル */
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+  padding: 0;
+  margin: 0;
+  }
+
+p {
+  margin: 0;
+}
+
+
+/* ================
+PC用のスタイル
+=================== */
+
+/* ヘッダー */
+.header-inner {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 0 20px;
+ }
+
+ .header-inner a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+ }
+
+ /* MyProfileの見出し部分 */
+h1 {
+  font-size: 34px;
+  padding: 0 20px;
+  margin-bottom: 20px;
+  border: 1px solid black;
+}
+.home {
+  text-decoration: none;
+}
+
+/* メニュー */
+nav .menu {
+  display: flex;
+  padding-left: 0;
+}
+nav li {
+  display: flex;
+  margin: 20px;
+  font-size: 34px;
+  list-style: none;
+}
+
+p,
+li {
+  font-size: 18px;
+}
+
+/* メインビジュアル */
+
+#main-photo {
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* セクション見出し */
+.index-h2 {
+  text-align: center;
+  font-size: 34px;
+  font-weight: bold;
+  margin-top: 50px;
+}
+
+/* About */
+.about-inner {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 20px auto;
+  max-width: 960px;
+  padding: 10px;
+}
+
+.profile-content {
+  margin-left: 150px;
+}
+.profile-content > ul {
+  padding-left: 50px;
+}
+
+/* 名前 */
+.name {
+  font-size: 24px;
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+/* プロフィール画像 */
+.about-photo {
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+}
+
+/* Works */
+.works-inner {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 auto;
+  max-width: 960px;
+  width: 100%;
+}
+
+/* Works画像と説明 */
+.item {
+  width: 25%;
+  padding-bottom: 60px;
+}
+
+/* フッター */
+footer p {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+/* ================
+スマートフォン用のスタイル
+=================== */
+@media  (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+  }
+  
+  h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+
+  nav li {
+    margin: 0 10px;
+  }
+
+  nav a {
+    font-size: 21px;
+  }
+
+  .item {
+    width: 100%;
+    text-align: center;
+    padding-bottom: 40px;
+  }
+}
+
+
+  
+
